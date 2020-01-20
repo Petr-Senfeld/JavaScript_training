@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Mar 28, 2019, 8:12:58 PM
+    Author     : qr88ul
+*/
+
+h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+  }
+
+div {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#user_input{
+  border: 2px solid blue;
+  border-radius: 4px;
+}
+  #button_play {
+
+    border-radius: 25px;
+  }
+  #button_hint {
+    color: aliceblue;
+    background-color:rgb(55, 0, 255);
+    width: 25px;
+    height: 25px;
+    border-radius: 45px;
+    -webkit-transition: width 2s; /* Safari */
+    position: relative;
+    transition: width 2s;
+    animation-name: play;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  #reset {
+    border-radius: 25px;
+  }
+
+  @keyframes play {
+    0%   { left:-170px; top:-75px;}
+    25%  { left:-170px; top: 160px;}
+    50%  { left: 180px; top: 160px;}
+    75%  { left: 180px; top:-75px;}
+    100% { left:-170px; top:-75px;}
+  }
