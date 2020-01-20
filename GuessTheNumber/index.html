@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>GUESS THE NUMBER</title>
+        <link rel="stylesheet" type="text/css" href="newcss.css ">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+     
+    <body>
+        <h1>Guess the Number<br>THE GAME</h1>        
+        <div>
+            <button id="button_hint" onclick="hintButton()">h</button>
+            <p>Máš TŘI pokusy.</p>
+            <p>Můžeš zkusit chytit nápovědu :-)</p>
+            <p>Hádej číslo od 1 - 100: </p>
+            <input id="user_input" placeholder="Tipuj 1-100" class="form" onfocus="this.value=''">
+            <button id="button_play" onclick="play()">Hádej</button>
+            <button id="reset" onclick="reset()">Znovu</button>
+          
+            <p id="numberToGuess"></p>
+            <p id="guesses"></p>
+            <p id="lastResult"></p>
+            <p id="lowOrHigh" class="lowOrHigh"></p>
+            <p id="gameOver"></p>
+            <p id="winning_number"></p>
+            <p id="hint"></p>
+        </div>
+          <script src="newjavascript.js" type="text/javascript"></script>        
+        </body>
+</html>
